@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="//code.jquery.com/jquery.js"></script>
+        <script src="/js/SVLibs.js"></script>
+        <script src="/js/rdp_hash.js"></script>
+        <script>
+            $(function() {  
+                function hashTest(){ 
+                    testStrings=[
+                        "BOMA121212M    ",
+                        "negligente sciovia agnostica aglio ceco cieco geco giogo chiavi ghepardo the odio stanno miei ira allo ocra fave pube ossa zoo",
+                    ];
+                    var result="";
+                    testStrings.forEach(function(k){
+                        result+= k+" : "+ phoneticHash(k) + "<hr>" +
+                                patientHash(k) + 
+                        "<hr>";
+                    });
+                    return result;
+                } 
+                $('#output').html(hashTest());                
+                $('#input').on("click.hash","input",function(){
+                    $('#output').html(
+                        $("[name='name']").val()+$("[name='surname']").val()+$("[name='dob']").val().toString()+ " : <br>" +                         
+                        patientHash(       
+                            [$("[name='name']").val(),$("[name='surname']").val(),$("[name='dob']").val().toString()]
+                    )); 
+                });  
+            }); 
+        </script>
+    </head>
+    <body>
+        <p id="input">
+            <input name="name" value="defasult">
+            <input name="surname" value="default">
+            <input type="date" name="dob" value="2000-11-13">
+        </p>
+        <p id="output">HASH</p>
+    </body>
+</html>

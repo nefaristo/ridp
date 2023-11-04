@@ -1,0 +1,999 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Data</title>
+</head>
+<body>
+<table border=1>
+<tr>
+<td bgcolor=silver class='medium'>Nome</td>
+<td bgcolor=silver class='medium'>descrizione</td>
+<td bgcolor=silver class='medium'>Tabella di base</td>
+<td bgcolor=silver class='medium'>ultima modifica</td>
+<td bgcolor=silver class='medium'>Note</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>2323</td>
+<td class='normal' valign='top'>seleziona  Causa fine   , Inizio ciclo   , Fine ciclo   <br>,filtra per  Inizio ciclo < 01/01/2012   ,    e , Fine ciclo > 31/12/2010   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>19/09/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Acidemia metilmalonica</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Codice centro   <br>,filtra per  Codice malattia di base = 592   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>10/01/2018</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Cambio Tecnica Cause</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Causa fine   , Causa cambio tecnica   <br>,ordina per  Codice paziente   <br>,filtra per  Causa fine = Passaggio ad altra tecnica   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>01/11/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>carico </td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Carico standard   <br>,ordina per  Inizio ciclo   , Età ad inizio dialisi (anni)   <br>,filtra per ( Inizio ciclo <= 01/01/1990   ,    oppure , Inizio ciclo >= 31/12/1998   ,    e , Tipo = cpd   ,    e , Carico standard   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni CPD</td>
+<td class='normal' valign='top'>19/09/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>cateteri complicanze</td>
+<td class='normal' valign='top'>seleziona  Data inserzione   , Tipo catetere   , Omentectomia   , Data rimozione   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Codice centro   , Codice paziente   , Durata ciclo (mesi)   <br></td>
+<td class='normal' valign='top'>Lista cateteri</td>
+<td class='normal' valign='top'>06/02/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>cateteri genova</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data inserzione   , Tipo catetere   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Data rimozione   , Motivo rimozione   , Utilizzo dopo giorni   <br>,ordina per  Tipo catetere   <br>,filtra per  Data inserzione > 01/01/2000   ,    e , Data inserzione < 01/01/2009   <br></td>
+<td class='normal' valign='top'>Lista cateteri</td>
+<td class='normal' valign='top'>16/08/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>cateteri peritoneali</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Data inserzione   <br>,ordina per  Data inserzione   <br></td>
+<td class='normal' valign='top'>Lista cateteri</td>
+<td class='normal' valign='top'>27/01/2009</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Cause di fine_dal_2000_al_2012 (per trapianti e decessi)</td>
+<td class='normal' valign='top'>seleziona  Tipo   , Fine ciclo   , Causa fine   <br>,filtra per  Fine ciclo > 31/12/1999   ,    e , Fine ciclo < 01/01/2013   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>21/03/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>cecità</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice malattia di base   , Tipo complicanza   , Data   , Inizio ciclo   , Fine ciclo   , Causa fine   , Codice centro   , Giorni ricovero   , Specifica malattia di base   , Tipo   <br>,filtra per ( Tipo complicanza Like cecità   ,    oppure , Tipo complicanza Like amaurosi   ,    oppure , Tipo complicanza Like visus )  <br></td>
+<td class='normal' valign='top'>Complicanze e ricoveri</td>
+<td class='normal' valign='top'>10/09/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Cinacalcet</td>
+<td class='normal' valign='top'>seleziona  Data osservazione   , Tipo terapia   , Specifica   , Tipo terapia   , Codice paziente   , Inizio ciclo   , Tipo   , Fine ciclo   , Tempo di osservazione   , Età ad inizio dialisi (anni)   , Codice centro   <br>,filtra per  Specifica Like cinacalcet   ,    oppure , Specifica Like mimpara   ,    oppure , Specifica Like parareg   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>07/04/2009</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>codici centro</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa cambio tecnica   , Specifica malattia di base   <br>,ordina per  Codice centro   <br>,filtra per  Codice paziente Like LEFR   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>24/10/2007</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Comorbidità tutto il registro</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Codice paziente   <br>,filtra per  Data nascita < 15/05/2017   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>08/05/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Complicanze</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Numero ciclo   , Data   , Tipo complicanza   , Complicanza correlata alla dialisi   , Giorni ricovero   , Tipo   <br>,filtra per  Data < 31/12/2010   <br></td>
+<td class='normal' valign='top'>Complicanze e ricoveri</td>
+<td class='normal' valign='top'>04/10/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>complicanze</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Data   , Tipo complicanza   , Giorni ricovero   , Complicanza correlata alla dialisi   , Inizio ciclo   , Data   <br></td>
+<td class='normal' valign='top'>Complicanze e ricoveri</td>
+<td class='normal' valign='top'>04/03/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>complicanze catetere</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   , Numero ciclo   , Data complicanza   , Complicanza   , SpecificheComplicanza   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/1995   ,    e , Età ad inizio dialisi (anni) > 1   <br></td>
+<td class='normal' valign='top'>Lista complicanze catetere</td>
+<td class='normal' valign='top'>25/08/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>complicanze cateteri </td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Data inserzione   , Tipo catetere   , Sede inserzione   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Utilizzo dopo giorni   , Data complicanza   , Complicanza   , SpecificheComplicanza   , Sintomi complicanza   , Specifiche sintomo   , Data rimozione   , Motivo rimozione   , Inizio ciclo   , Fine ciclo   , Fine (causa)   <br>,ordina per  Data inserzione   <br></td>
+<td class='normal' valign='top'>Lista complicanze catetere</td>
+<td class='normal' valign='top'>16/08/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Complicanze tutto il registro</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   , Trattamento precedente   , Tipo complicanza   , Complicanza correlata alla dialisi   , Malattia di base   , Specifica malattia di base   <br>,filtra per  Inizio ciclo < 20/06/2018   ,    e , Tipo complicanza Like torace   <br></td>
+<td class='normal' valign='top'>Complicanze e ricoveri</td>
+<td class='normal' valign='top'>08/05/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Cpd 1986-2011</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Inizio ciclo   <br>,ordina per  Inizio ciclo   , Età ad inizio dialisi (anni)   <br>,filtra per  Inizio ciclo >= 01/01/1999   ,    e , Inizio ciclo <= 31/12/2016   ,    e , Tipo = cpd   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>19/09/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>CPD-HD>2004</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Sesso   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Fine(causa)   , Numero ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   , Clearance urea   , Diuresi residua   <br>,filtra per  Inizio ciclo >= 01/01/2004   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>21/05/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: accessi ED</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data accesso   , Tipo accesso   , Specifica   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Tipo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Numero ciclo dello stesso tipo   , Numero ciclo precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Primo trattamento in assoluto   , Trattamento precedente   , Data accesso   , Malattia di base   , Specifica malattia di base   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Accessi ED</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>Download Data: Accessi ED</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Anagrafica</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Descrizione centro   , Data nascita   , Sesso   , Luogo di nascita   , Luogo di residenza   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Ultimo aggiornamento dati   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>22/01/2013</td>
+<td class='normal' valign='top'>Download data: anagrafica</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: cateteri</td>
+<td class='normal' valign='top'>seleziona  Data inserzione   , Tipo catetere   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Utilizzo dopo giorni   , Data rimozione   , Motivo rimozione   , Codice paziente   , Codice centro   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Lista cateteri</td>
+<td class='normal' valign='top'>25/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista cateteri</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Cicli</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Tipo   , Fine ciclo   , Inizio ciclo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Numero ciclo dello stesso tipo   , Numero ciclo precedente   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Primo trattamento in assoluto   , Trattamento precedente   , TrattamentoPrecedente   , NuovoCentro   , Training CPD   , Preparazione accesso vascolare   , Causa cambio tecnica   , Motivo ciclo   , Giorni ricovero ad inizio dialisi   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>22/01/2013</td>
+<td class='normal' valign='top'>Download data: cicli dialisi</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: compl. cateteri</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data complicanza   , Complicanza   , SpecificheComplicanza   , Sintomi complicanza   , Specifiche sintomo   , Data inserzione   , Tipo catetere   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Lista complicanze catetere</td>
+<td class='normal' valign='top'>29/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista complicanze cateteri</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Conn. CPD</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data connessione   , Connessione   , Frequenza sostituzione (gg)   , Inizio ciclo   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Connessioni CPD</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>Download Data: Connessioni CPD</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: decesso</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data decesso   , Causa decesso   , Fattori di rischio renali   , Altri fattori di rischio   , Fattori di rischio successivi   , Riscontro autoptico   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Schede decesso</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>Download DAta: Schede decesso</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: medic. catetere</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data medicazione   , Tipo disinfettante   , Medicazione ogni gg   , Data inserzione   , Tipo catetere   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Lista medicazioni catetere</td>
+<td class='normal' valign='top'>29/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista medicazione catetere</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data dump: osservazioni</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Tempo di osservazione   , Data osservazione   , Inizio ciclo   , Clearance creatinina   , Clearance urea   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>25/01/2013</td>
+<td class='normal' valign='top'>Download Data: Osservazioni periodiche</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: peritoniti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data peritonite   , Criteri diagnostici   , Specifica diagnosi   , Coltura tampone nasale   , Infezione emergenza cutanea   , Tampone emergenza cutanera   , Leakage   , altri fattori di rischio   , Coltura liquido peritoneale (1)   , Coltura liquido peritoneale (2)   , Coltura non eseguita per   , Modifica al protocollo dialitico   , Giorni di ricovero   <br>,filtra per  Data peritonite > 31/12/2009   <br></td>
+<td class='normal' valign='top'>Lista peritoniti</td>
+<td class='normal' valign='top'>29/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista peritoniti</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: prescr. CPD</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Carico standard   , Numero scambi   , Tipo di tampone   , Concentrazione media glucosio   , Volume tidal   , Ultimo carico   , Tipo soluzione   , Durata dialisi min   , Inizio ciclo   , Data osservazione   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2000   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni CPD</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista prescrizioni CPD</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: prescr. HD</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Sedute settimanali   , Durata sedute   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Modalita   , Data osservazione   , Inizio ciclo   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni ED</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>DOwnload Data: Lista prescrizioni ED</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Ricoveri</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data   , Tipo complicanza   , Giorni ricovero   , Complicanza correlata alla dialisi   , Codice malattia di base   , Inizio ciclo   <br></td>
+<td class='normal' valign='top'>Complicanze e ricoveri</td>
+<td class='normal' valign='top'>22/01/2013</td>
+<td class='normal' valign='top'>Download Data: Complicanze e Ricoveri</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Scheda clinica</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data osservazione   , Data nascita   , Età ad inizio dialisi (anni)   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Diuresi residua   , Fine(causa)   , Peso   , Statura   , PAMin   , PAMax   , Tipo   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo < 01/01/2008   ,    e , Fine ciclo >= 01/01/2007   ,    e , Data osservazione < 01/01/2008   ,    e , Data osservazione >= 01/01/2007   ,    e , Tipo = CPD   <br></td>
+<td class='normal' valign='top'>Scheda clinica</td>
+<td class='normal' valign='top'>30/01/2013</td>
+<td class='normal' valign='top'>Download Data: Scheda clinica</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: Terapie</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Data osservazione   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>29/01/2013</td>
+<td class='normal' valign='top'>Download Data: Terapie</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Data Dump: terapie perit.</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Dal   , Al   , Farmaco   , Dose   , Via   , Intermittenza   , SomministrazioneDoseCarico   , Data peritonite   <br>,ordina per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Lista terapie peritoniti</td>
+<td class='normal' valign='top'>29/01/2013</td>
+<td class='normal' valign='top'>Download Data: Lista terapie peritoniti</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>diuresi</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data osservazione   , Diuresi   , Tipo   <br>,filtra per  Data osservazione >= 01/01/2004   ,    e , Tipo = CPD   <br></td>
+<td class='normal' valign='top'>Dati biochimici</td>
+<td class='normal' valign='top'>13/09/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>ED < 2 anni</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data nascita   , Codice malattia di base   , Specifica malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Trattamento precedente   , Causa cambio tecnica   <br>,ordina per  Età ad inizio dialisi (anni)   , Trattamento precedente   <br>,filtra per  Inizio ciclo >= 01/01/2000   ,    e , Età ad inizio dialisi (anni) < 2   ,    e , Tipo = ED   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>11/10/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>eritropoietina</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Causa fine   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Data osservazione   , Tipo   <br>,ordina per  Codice paziente   , Data osservazione   <br>,filtra per ( Tipo terapia Like Eritropoietina   ,    oppure , Tipo terapia Like Darbepoetin )  ,    e , Data osservazione >= 1/1/2005   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>04/11/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Farmaci e lattanti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Tempo di osservazione   <br>,ordina per  Codice paziente   <br>,filtra per  Età ad inizio dialisi (anni) < 1   ,    e , Inizio ciclo >= 01/01/1995   ,    e , Fine ciclo < 31/12/2007   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>19/05/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>GFR at start</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Fine(causa)   , Codice malattia di base   , Inizio ciclo   , Tipo   , Clearance creatinina   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Clearance urea   , Diuresi residua   <br>,ordina per  Codice paziente   , Età ad inizio dialisi (anni)   <br>,filtra per  Trattamento precedente = terapia conservativa   ,    e ,( Inizio ciclo >= 01/01/2006   ,    e , Inizio ciclo < 31/12/2008 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>27/03/2009</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>GH</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Tipo   , Codice malattia di base   , Altro   , Inizio ciclo   , 25OH-D3   , Data osservazione   <br>,ordina per  Età ad inizio dialisi (anni)   , Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2000   ,    e , Tipo = CPD   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>10/03/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Hd hdf</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Modalita   , Tempo di osservazione   , Codice centro   , Sesso   , Malattia di base   , Specifica malattia di base   , Data nascita   , Primo trattamento in assoluto   , Inizio ciclo   , Fine ciclo - ultimo aggiornamento   , Fine ciclo   , Tipo   , Trattamento precedente   , Data osservazione   , Fine(causa)   , Causa fine   , Causa decesso   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2004   ,    e , Tipo = ED   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni ED</td>
+<td class='normal' valign='top'>28/12/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>HD-HDF</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Età ad inizio dialisi (anni)   , Superficie filtro   , Tipo membrana   , Modalita   , Sedute settimanali   , Durata sedute   <br>,ordina per  Età ad inizio dialisi (anni)   , Modalita   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni ED</td>
+<td class='normal' valign='top'>05/04/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>HD<2 aa cicli</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Clearance creatinina   , Diuresi residua   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , KT_V_Urea_settimanale_renale   , Clearance_creatinina_dialitico   , KT_V_Urea_settimanale_dialitico   , Clearance_creatinina_renale   , Ultrafiltrazione   , Peso   , Statura   , PAMin   , PAMax   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Al(OH)3   , Alfa-beta-bloccanti   , Alfa-bloccanti   , Altro antiipertensivo   , Beta-bloccanti   , Ca antagonisti   , CaCO3   , Calcio Acetato   , Darbepoetin   , Diuretici   , Eritropoietina   , hGH   , Renagel   , Terapia marziale   , Tipo   , Età ad inizio dialisi (anni)   <br>,ordina per  Età ad inizio dialisi (anni)   , Tempo di osservazione   <br>,filtra per  Tipo = ED   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>24/02/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incedenti dal 2010 con ciclo concluso Genova</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Malattia di base   , Specifica malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   <br>,ordina per  Malattia di base   <br>,filtra per  Inizio ciclo >= 01/01/2010   ,    e , Fine ciclo <= 31/01/2017   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>01/02/2017</td>
+<td class='normal' valign='top'>Ordinati per malattia di Base</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incidenti 2009</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Trattamento precedente   , Fine ciclo   , Codice paziente   <br>,ordina per  Tipo   , Inizio ciclo   <br>,filtra per  Inizio ciclo >= 01/01/2008   ,    e , Inizio ciclo < 01/01/2009   ,    e , Trattamento precedente = terapia conservativa   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>20/11/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incidenti 2014</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Causa fine   , Codice centro   , Ultimo aggiornamento dati   , Causa cambio tecnica   , Giorni ricovero ad inizio dialisi   <br>,ordina per  Codice paziente   , Codice centro   , Codice paziente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>17/11/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incidenti 2016</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Causa cambio tecnica   , Età ad inizio dialisi (anni)   , Codice centro   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2016   ,    e , Inizio ciclo < 01/01/2017   ,    e , Trattamento precedente = terapia conservativa   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>12/07/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incidenti anni 2006-2014</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Malattia di base   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Codice malattia di base   <br>,ordina per  Tipo   , Inizio ciclo   <br>,filtra per  Inizio ciclo >= 01/01/2006   ,    e , Inizio ciclo < 01/01/2015   ,    e , Trattamento precedente = Terapia conservativa   ,    e , Tipo = ed   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>15/03/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Incidenti prima del 1999 meno di 16 anni</td>
+<td class='normal' valign='top'>seleziona  Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Codice paziente   , Codice centro   , Tipo   <br>,ordina per  Tipo   , Età ad inizio dialisi (anni)   <br>,filtra per  Inizio ciclo <= 31/12/1998   ,    e , Inizio ciclo >= 01/01/1986   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>19/09/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Inserimenti 2010-2011-2012</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   <br>,ordina per  Codice centro   , Codice paziente   <br>,filtra per ( Inizio ciclo <= 31/12/2012   ,    e , Fine ciclo >= 01/01/2010 )  ,    oppure ,( Inizio ciclo <= 31/12/2012   ,    e , Causa fine = continua )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>27/11/2014</td>
+<td class='normal' valign='top'>Per correzione citazioni e acknowledgments </td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Inserimento pz diviso per centro</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Causa fine   <br>,filtra per  Fine ciclo >= 01/01/2013   ,    oppure , Causa fine = continua   ,    e , Inizio ciclo <= 31/12/2016   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>12/10/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Lattanti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Numero ciclo   , Durata ciclo (mesi)   , Inizio ciclo   , Fine ciclo   , Tipo   <br>,ordina per  Durata ciclo (mesi)   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>23/08/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>lista trapianto</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Inizio ciclo   , Fine ciclo   , Tipo   , Situazione lista trapianti   <br>,ordina per  Codice paziente   , Tempo di osservazione   <br>,filtra per  Inizio ciclo >= 01/01/1996   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche</td>
+<td class='normal' valign='top'>26/05/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>metab Ca/P</td>
+<td class='normal' valign='top'>seleziona  Data osservazione   , Codice malattia di base   , Tipo   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Codice paziente   , Età alla osservazione (anni)   , PTH   , Ca   , P   , Diuresi   <br>,ordina per  Data osservazione   , Codice paziente   , Tipo   <br>,filtra per  Data osservazione >= 01/01/1999   ,    e , Data osservazione <= 31/12/2011   <br></td>
+<td class='normal' valign='top'>Dati biochimici</td>
+<td class='normal' valign='top'>02/09/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Sesso   , Codice malattia di base   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Numero ciclo   , Fine(causa)   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Fine ciclo - ultimo aggiornamento   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>07/02/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Data nascita   <br>,ordina per  Codice paziente   , Inizio ciclo   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>04/12/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Inizio ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Numero ciclo   , Causa fine   , Durata ciclo (mesi)   , Malattia di base   , Specifica malattia di base   , Codice paziente   <br>,ordina per  Inizio ciclo   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>08/05/2011</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Causa decesso   , Codice paziente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>27/01/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice paziente   <br>,ordina per  Codice paziente   <br>,filtra per  Codice paziente <   ,    e , Codice paziente <   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>11/04/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Codice paziente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>14/04/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Tipo   , Fine ciclo   , Numero ciclo   , Primo trattamento in assoluto   , Trattamento precedente   , Codice paziente   <br>,ordina per  Codice paziente   <br>,filtra per  Codice paziente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>18/04/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Data nascita   <br>,filtra per ( Codice centro = 13BKA )  ,    e ,( Codice malattia di base = 112 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>15/06/2015</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data nascita   , Sesso   , Malattia di base   , Specifica malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Trattamento precedente   , Causa cambio tecnica   , Motivo ciclo   <br>,ordina per  Codice centro   , Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2007   ,    e , Età ad inizio dialisi (anni) < 18   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>22/02/2018</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Patologie associate non renali   <br>,filtra per  Ultimo aggiornamento dati >= 01/01/2004   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>28/12/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data nascita   , Patologie associate non renali   <br>,filtra per  Ultimo aggiornamento dati > 01/01/2007   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>24/04/2018</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Data osservazione   , Tempo di osservazione   , Tipo   , Modalita   , Durata sedute   , Sedute settimanali   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Sedute settimanali   <br>,ordina per  Codice paziente   , Data osservazione   , Sedute settimanali   <br>,filtra per  Data osservazione >= 01/01/2004   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni ED</td>
+<td class='normal' valign='top'>23/01/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo terapia   , Specifica   , Tempo di osservazione   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>13/03/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Tipo terapia   , Specifica   , Codice paziente   , Tipo   <br>,ordina per  Inizio ciclo   <br>,filtra per  Inizio ciclo < 01/01/1999   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>19/03/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Data nascita   , Tipo   , Sesso   , Tempo di osservazione   <br>,ordina per  Codice paziente   <br>,filtra per ( Inizio ciclo > 01/01/2006   ,    e , Fine ciclo > 01/01/2011 )  ,    e , Tempo di osservazione < 3   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>15/11/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data nascita   , Sesso   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Tempo di osservazione   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , Peso   , Statura   , PAMax   , PAMin   , Eritropoietina   , hGH   <br>,ordina per  Codice paziente   , Tempo di osservazione   <br>,filtra per  Tipo = ED   ,    e , Inizio ciclo > 01/01/2004   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>04/12/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Data osservazione   , Tempo di osservazione   , Tipo   , PTH   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , Peso   , Statura   , PAMax   , PAMin   , Eritropoietina   , Tempo di osservazione   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Alfa-beta-bloccanti   , Beta-bloccanti   , Ca antagonisti   , Altro antiipertensivo   , hGH   <br>,ordina per  Codice paziente   , Data osservazione   <br>,filtra per ( Tipo = ED )  ,    e , Data osservazione >= 01/01/2004   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>23/01/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Peso   , 1_25-OH2   , Eritropoietina   , Tempo di osservazione   , Tipo   , Inizio ciclo   , Emoglobina   , Statura   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Al(OH)3   , Alfa-beta-bloccanti   , Alfa-bloccanti   , Altro antiipertensivo   , Beta-bloccanti   , Ca antagonisti   , CaCO3   , Calcio Acetato   , Diuretici   , hGH   , Renagel   , Terapia marziale   , Codice paziente   , Data nascita   , Data osservazione   , Tempo di osservazione   <br>,filtra per  Tipo = ED   ,    e , Inizio ciclo >= 01/01/2000   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>26/02/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data osservazione   , Inizio ciclo   , Fine ciclo   , Tipo   , Peso   , Clearance creatinina   <br>,filtra per  Inizio ciclo >= 01/01/2004   <br></td>
+<td class='normal' valign='top'>Scheda clinica</td>
+<td class='normal' valign='top'>02/10/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione biochimica ED 2aa</td>
+<td class='normal' valign='top'>seleziona  Età ad inizio dialisi (anni)   , Data osservazione   , Data nascita   , Codice centro   , Tipo   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , KT_V_Urea_settimanale_dialitico   , Clearance_creatinina_renale   , Codice paziente   <br>,ordina per  Età ad inizio dialisi (anni)   <br>,filtra per  Tipo = ED   <br></td>
+<td class='normal' valign='top'>Dati biochimici</td>
+<td class='normal' valign='top'>24/02/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione cicli</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Peso   , Statura   , PAMax   , PAMin   , Tipo   <br>,filtra per  Tipo = ED   ,    e , Data osservazione >= 01/01/2000   <br></td>
+<td class='normal' valign='top'>Osservazioni periodiche (dettagliate)</td>
+<td class='normal' valign='top'>26/02/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Nuova interrogazione ED 2 aa</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data osservazione   , Codice centro   , Tipo   , Data nascita   , Inizio ciclo   , Peso   , Statura   , PAMin   , PAMax   , Età ad inizio dialisi (anni)   <br>,ordina per  Età ad inizio dialisi (anni)   , Inizio ciclo   , Codice paziente   <br>,filtra per  Tipo = ED   ,    e , Inizio ciclo >= 01/01/2000   <br></td>
+<td class='normal' valign='top'>Scheda clinica</td>
+<td class='normal' valign='top'>24/02/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>nuovi pz 2008</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Tipo   , Numero ciclo   , TrattamentoPrecedente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Causa fine   <br>,filtra per ( Inizio ciclo >= 1/1/2011   ,    e , Inizio ciclo < 01/01/2012 )  ,    e , TrattamentoPrecedente = trapianto   ,    e , Età ad inizio dialisi (anni) < 18   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>16/02/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Ossalosi</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Luogo di residenza   , Ultimo aggiornamento dati   , Descrizione centro   <br>,filtra per  Codice malattia di base = 53   ,    oppure , Codice malattia di base = 530   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>22/02/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>patologie associate </td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Patologie associate non renali   , Ultimo aggiornamento dati   , Specifica malattia di base   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>04/01/2007</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pazienti 2004</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data nascita   , Inizio ciclo   , Fine ciclo   , Tipo   , Malattia di base   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   <br>,ordina per  Codice centro   <br>,filtra per  Inizio ciclo >= 01/01/2012   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>20/11/2007</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pazienti 2004 residenza</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Luogo di nascita   , Luogo di residenza   , Ultimo aggiornamento dati   <br>,ordina per  Codice paziente   <br>,filtra per  Ultimo aggiornamento dati >= 31/12/2004   <br></td>
+<td class='normal' valign='top'>Dati anagrafici paziente</td>
+<td class='normal' valign='top'>16/09/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Pazienti centro 13TFA</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Malattia di base   , Età ad inizio dialisi (anni)   <br>,ordina per  Codice paziente   , Età ad inizio dialisi (anni)   <br>,filtra per  Codice centro = 13TFA   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>29/04/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pazienti genova</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Tipo   <br>,ordina per  Inizio ciclo   <br>,filtra per  Codice centro Like gaa   ,    e , Fine ciclo - ultimo aggiornamento >= 31/12/1980   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>30/06/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Pazienti nati in Sicilia</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Provincia   , Codice malattia di base   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Tipo   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Causa cambio tecnica   , Trattamento precedente   , Specifica malattia di base   , Numero ciclo   , Codice centro   , Malattia di base   , Diuresi residua   , Clearance creatinina   , Clearance urea   <br>,ordina per  Inizio ciclo   , Codice centro   <br>,filtra per  Provincia = AG   ,    oppure , Provincia = CL   ,    oppure , Provincia = CT   ,    oppure , Provincia = EN   ,    oppure , Provincia = ME   ,    oppure , Provincia = PA   ,    oppure , Provincia = RG   ,    oppure , Provincia = SR   ,    oppure , Provincia = CT   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>28/11/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pazienti totali</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Numero ciclo   , Numero ciclo dello stesso tipo   , Inizio ciclo   , Fine ciclo   , Tipo   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>16/10/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>peritonite 1986-2008</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Data peritonite   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Criteri diagnostici   , Coltura liquido peritoneale (1)   , Coltura liquido peritoneale (2)   , Giorni di ricovero   , Coltura tampone nasale   , Infezione emergenza cutanea   , Tampone emergenza cutanera   , Leakage   , Durata ciclo (mesi)   , Causa fine   <br>,filtra per  Codice paziente <= M   <br></td>
+<td class='normal' valign='top'>Lista peritoniti</td>
+<td class='normal' valign='top'>05/02/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Peritoniti 2016</td>
+<td class='normal' valign='top'>seleziona  Codice centro   , Codice paziente   , Tipo   , Data peritonite   , Inizio ciclo   , Fine ciclo   , Causa fine   <br>,filtra per ( Fine ciclo <= 31/12/2016   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2017   ,    e , Codice centro Like 13BKA   ,    e , Data peritonite >= 01/01/2016   ,    e , Data peritonite <= 31/12/2016   <br></td>
+<td class='normal' valign='top'>Lista peritoniti</td>
+<td class='normal' valign='top'>07/01/2014</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>PET</td>
+<td class='normal' valign='top'>seleziona  D P creatinina (4h)   , Data test   , Codice paziente   , Codice centro   <br></td>
+<td class='normal' valign='top'>Test equilibrazione peritoneale</td>
+<td class='normal' valign='top'>10/05/2007</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prescrizione ED</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data osservazione   , Tempo di osservazione   , Sedute settimanali   , Durata sedute   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Modalita   <br>,filtra per  Data osservazione >= 01/01/2005   <br></td>
+<td class='normal' valign='top'>Lista prescrizioni ED</td>
+<td class='normal' valign='top'>12/09/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>prescrizione PD 2005</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Data osservazione   , Tempo di osservazione   , Numero scambi   , Carico standard   , Ultimo carico   , Tipo soluzione   , Scarico liquido attacco APD   , Tipo di tampone   , Concentrazione media glucosio   , Volume tidal   , Durata dialisi min   , Tipo   <br>,ordina per  Codice paziente   , Codice centro   , Data osservazione   <br>,filtra per  Data osservazione <= 01/01/2005   ,    e <br></td>
+<td class='normal' valign='top'>Lista prescrizioni CPD</td>
+<td class='normal' valign='top'>09/09/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalent pts 31/12/2011</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   <br>,ordina per  Codice paziente   , Inizio ciclo   <br>,filtra per ( Fine ciclo > 31/12/2003   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2005 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>25/07/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2004</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Sesso   , Codice paziente   , Codice centro   <br></td>
+<td class='normal' valign='top'>Lista peritoniti</td>
+<td class='normal' valign='top'>09/11/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2004b</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   <br></td>
+<td class='normal' valign='top'>Dati biochimici</td>
+<td class='normal' valign='top'>19/09/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2009</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   , Malattia di base   , Codice malattia di base   , Numero ciclo   , Causa decesso   <br>,ordina per  Codice paziente   <br>,filtra per ( Fine ciclo > 31/12/2001   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2003 )  ,    e , Tipo = ed   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>18/04/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2010</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   <br>,filtra per ( Fine ciclo > 31/12/2009   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2011   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>18/04/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2011</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , TrattamentoPrecedente   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   , Clearance urea   , Diuresi residua   <br>,ordina per  Età ad inizio dialisi (anni)   , Inizio ciclo   <br>,filtra per ( Fine ciclo >= 01/01/2011   ,    oppure , Inizio ciclo = continua )  ,    e <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>21/08/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2012-2016 con PTH CA P e FA</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Età alla osservazione (anni)   , Inizio ciclo   , Fine ciclo   , Tipo   , Fine(causa)   , Sesso   , PTH   , P   , Ca   , FA   <br>,filtra per  Inizio ciclo < 01/01/2017   ,    e , Fine ciclo >= 01/01/2012   ,    e , Data osservazione < 01/01/2017   ,    e , Data osservazione >= 01/01/2007   <br></td>
+<td class='normal' valign='top'>Dati biochimici</td>
+<td class='normal' valign='top'>15/11/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2013-2016</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Malattia di base   , Codice malattia di base   , Causa cambio tecnica   , Causa decesso   , Numero ciclo   , Codice centro   <br>,ordina per  Codice paziente   , Tipo   <br>,filtra per  Fine ciclo > 31/12/2012   ,    oppure , Causa fine = continua   ,    e , Inizio ciclo < 01/01/2017   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>07/09/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti 2014 Luzio</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa cambio tecnica   , Codice centro   , Codice malattia di base   , Malattia di base   , Ultimo aggiornamento dati   <br>,ordina per  Codice paziente   , Codice centro   , Inizio ciclo   <br>,filtra per ( Fine ciclo > 31/12/2013   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2015 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>09/03/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti anno 2011 d.c.</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa cambio tecnica   , Durata ciclo (mesi)   <br>,ordina per  Tipo   , Inizio ciclo   <br>,filtra per ( Fine ciclo > 31/12/2012   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2013 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>15/03/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti anno 2012</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   , Codice paziente   , Malattia di base   , Codice malattia di base   , Numero ciclo   , Codice centro   <br>,ordina per  Codice paziente   , Codice paziente   <br>,filtra per ( Fine ciclo >= 01/01/2013   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2014   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>09/10/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prevalenti luzio 2012</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Tipo   , Causa fine   , Trattamento precedente   <br>,ordina per  Codice paziente   <br>,filtra per ( Fine ciclo > 31/12/2011   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2013 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>15/10/2013</td>
+<td class='normal' valign='top'>Da confrontare con interrogazione "Prevalenti 2013"</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Primary hyperoxaluria</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Codice malattia di base   , Tipo   , Inizio ciclo   , Clearance creatinina   , Fine ciclo   , Causa fine   , Causa decesso   , Trattamento precedente   , Diuresi residua   , Codice centro   , Causa cambio tecnica   <br>,ordina per  Inizio ciclo   <br>,filtra per  Codice malattia di base = 53   ,    oppure , Codice malattia di base = 530   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>06/03/2011</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Protocollo HD lattanti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Malattia di base   , Età ad inizio dialisi (anni)   , Trattamento precedente   , Diuresi residua   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Tipo   <br>,ordina per  Inizio ciclo   <br>,filtra per  Età ad inizio dialisi (anni) < 2   ,    e , Durata ciclo (mesi) > 3    ,    e , Inizio ciclo >= 01/01/2000   ,    e , Tipo = ED   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>20/11/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prova aggiungi visualizzazione campi</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   <br>,ordina per  Codice paziente   <br>,filtra per  Codice paziente <   ,    e , Codice paziente <   ,    e , Codice paziente <   ,    e , Codice paziente <   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>15/04/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Prova elena</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Data nascita   , Età ad inizio dialisi (anni)   <br>,ordina per  Codice paziente   <br>,filtra per ( Fine ciclo > 31/12/2008   ,    oppure , Causa fine = continua )  , Codice paziente   ,    e <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>30/11/2012</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pz 2012 - UNICA INCIDENTI</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Codice centro   , Malattia di base   , Primo trattamento in assoluto   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   <br>,ordina per  Trattamento precedente   , Codice paziente   <br>,filtra per  Inizio ciclo >= 01/01/2012   ,    e , Inizio ciclo < 01/01/2013   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>09/10/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>pz 2012 - UNICA PREVALENTI</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Tipo   , Numero ciclo   , TrattamentoPrecedente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   <br>,ordina per  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Codice centro   <br>,filtra per  Inizio ciclo <= 31/12/2012   ,    e ,( Fine ciclo > 31/12/2011   ,    oppure , Causa fine = continua )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>16/02/2006</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>PZ con 1 ciclo DP al 2005</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice centro   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   <br>,ordina per  Codice centro   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>28/01/2010</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Sindrome nefrosica congenita</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Causa fine   , Causa decesso   <br>,ordina per  Codice paziente   <br>,filtra per  Codice malattia di base = 112   ,    oppure , Codice malattia di base = 111   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>22/11/2013</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>terapia < 1 anno</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Età ad inizio dialisi (anni)   , Numero ciclo   , Tipo terapia   , Inizio ciclo   , Specifica   , Dose   , SomministrazioniOgniGg   , Tempo di osservazione   <br>,ordina per  Codice paziente   <br>,filtra per  Età ad inizio dialisi (anni) <= 1   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>27/02/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Terapia Altro</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data osservazione   , Tipo terapia   , Specifica   <br>,filtra per  Data osservazione < 15/11/2016   ,    e , Data osservazione > 01/01/2015   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>01/11/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>terapia con GH</td>
+<td class='normal' valign='top'>seleziona  Tipo terapia   , Codice centro   , Data osservazione   , Dose   , Età ad inizio dialisi (anni)   <br>,ordina per  Codice paziente   <br>,filtra per  Tipo terapia = hGh   ,    e , Data osservazione > 01/01/2005   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>07/06/2007</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Terapie nei tx falliti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   , Malattia di base   , Età ad inizio dialisi (anni)   , Tipo terapia   , Specifica   , Trattamento precedente   <br>,ordina per  Codice paziente   <br>,filtra per  Inizio ciclo > 01/01/1990   ,    e , Trattamento precedente Like trapianto   ,    e , Tipo terapia Like altro   <br></td>
+<td class='normal' valign='top'>Terapie</td>
+<td class='normal' valign='top'>30/05/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Test</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Numero ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   <br>,ordina per  Tipo   , Codice paziente   <br>,filtra per ( Tipo = ED   ,    e , Inizio ciclo >= 01/01/2004 )  ,    oppure ,( Tipo = CPD   ,    e , Inizio ciclo >= 01/01/2005 )  <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>04/02/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>trapianti 2001-2007</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Codice malattia di base   , Codice centro   , Tipo   , Fine ciclo   , Codice paziente   , Durata ciclo (mesi)   , Malattia di base   <br>,ordina per  Fine ciclo   <br>,filtra per ( Causa fine = trapianto da cadavere   ,    oppure , Causa fine = trapianto da vivente )  ,    e , Fine ciclo >= 01/01/2001   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>12/03/2008</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Trapianti da vivente a genova dal 2007 a l 2017</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Causa fine   , Codice centro   <br>,filtra per  Fine ciclo >= 01/01/2007   ,    e , Codice centro Like bka   ,    e , Causa fine Like vivente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>06/03/2018</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Trapianti da vivente ordinato per anno</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Codice malattia di base   , Malattia di base   , Durata ciclo (mesi)   , Causa fine   <br>,ordina per  Fine ciclo   <br>,filtra per  Causa fine Like vivente   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>24/11/2016</td>
+<td class='normal' valign='top'>Query che si aggiorna in automatico senza cambiare criteri</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Trapianti falliti</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Tipo   , Trattamento precedente   , Inizio ciclo   , Clearance creatinina   , Malattia di base   , Sesso   , Fine(causa)   , Fine ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Codice centro   , Età ad inizio dialisi (anni)   , Sesso   , Numero ciclo   , Primo trattamento in assoluto   , Causa cambio tecnica   , Data nascita   , Codice paziente   <br>,ordina per  Codice paziente   , Inizio ciclo   <br>,filtra per  Inizio ciclo < 01/01/2017   ,    e , Trattamento precedente Like trapianto   ,    e , Codice centro = 13tea   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>18/04/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Tutto il registro per Stefano</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   , Data nascita   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa cambio tecnica   , Causa decesso   , Malattia di base   , Codice malattia di base   , Codice centro   <br>,ordina per  Inizio ciclo   <br>,filtra per  Inizio ciclo <= 31/12/2018   ,    e , Età ad inizio dialisi (anni) < 18   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>30/05/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Tx da incidenti PD 2008-2015</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   , Codice malattia di base   , Malattia di base   <br>,ordina per  Fine ciclo   <br>,filtra per  Fine ciclo >= 01/01/2008   ,    e , Fine ciclo <= 31/12/2014   ,    e , Causa fine Like trapianto   ,    e , Tipo = CPD   ,    e , Inizio ciclo > 31/12/2007   ,    e , Trattamento precedente = Terapia conservativa   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>18/11/2016</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+
+<tr>
+<td class='normal' valign='top'>Tx Genova dal '96 ad oggi</td>
+<td class='normal' valign='top'>seleziona  Codice paziente   , Data nascita   , Fine ciclo   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Causa fine   , Codice centro   , Trattamento precedente   <br>,filtra per  Fine ciclo > 31/12/1995   ,    e , Causa fine Like trapianto   ,    e , Codice centro Like bka   <br></td>
+<td class='normal' valign='top'>Cicli di dialisi</td>
+<td class='normal' valign='top'>20/02/2017</td>
+<td class='normal' valign='top'>-</td>
+</tr>
+</table>
+</body></html>

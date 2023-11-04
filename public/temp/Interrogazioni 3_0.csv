@@ -1,0 +1,418 @@
+Nome,descrizione,"Tabella di base","ultima modifica",Note
+2323,"seleziona  Causa fine   , Inizio ciclo   , Fine ciclo   
+,filtra per  Inizio ciclo < 01/01/2012   ,    e , Fine ciclo > 31/12/2010   
+","Cicli di dialisi",19/09/2012,-
+"Acidemia metilmalonica","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Codice centro   
+,filtra per  Codice malattia di base = 592   
+","Cicli di dialisi",10/01/2018,-
+"Cambio Tecnica Cause","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Causa fine   , Causa cambio tecnica   
+,ordina per  Codice paziente   
+,filtra per  Causa fine = Passaggio ad altra tecnica   
+","Cicli di dialisi",01/11/2016,-
+"carico ","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Carico standard   
+,ordina per  Inizio ciclo   , Età ad inizio dialisi (anni)   
+,filtra per ( Inizio ciclo <= 01/01/1990   ,    oppure , Inizio ciclo >= 31/12/1998   ,    e , Tipo = cpd   ,    e , Carico standard   
+","Lista prescrizioni CPD",19/09/2012,-
+"cateteri complicanze","seleziona  Data inserzione   , Tipo catetere   , Omentectomia   , Data rimozione   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Codice centro   , Codice paziente   , Durata ciclo (mesi)   
+","Lista cateteri",06/02/2010,-
+"cateteri genova","seleziona  Codice paziente   , Codice centro   , Data inserzione   , Tipo catetere   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Data rimozione   , Motivo rimozione   , Utilizzo dopo giorni   
+,ordina per  Tipo catetere   
+,filtra per  Data inserzione > 01/01/2000   ,    e , Data inserzione < 01/01/2009   
+","Lista cateteri",16/08/2006,-
+"cateteri peritoneali","seleziona  Codice centro   , Codice paziente   , Data inserzione   
+,ordina per  Data inserzione   
+","Lista cateteri",27/01/2009,-
+"Cause di fine_dal_2000_al_2012 (per trapianti e decessi)","seleziona  Tipo   , Fine ciclo   , Causa fine   
+,filtra per  Fine ciclo > 31/12/1999   ,    e , Fine ciclo < 01/01/2013   
+","Cicli di dialisi",21/03/2013,-
+cecità,"seleziona  Codice paziente   , Codice malattia di base   , Tipo complicanza   , Data   , Inizio ciclo   , Fine ciclo   , Causa fine   , Codice centro   , Giorni ricovero   , Specifica malattia di base   , Tipo   
+,filtra per ( Tipo complicanza Like cecità   ,    oppure , Tipo complicanza Like amaurosi   ,    oppure , Tipo complicanza Like visus )  
+","Complicanze e ricoveri",10/09/2010,-
+Cinacalcet,"seleziona  Data osservazione   , Tipo terapia   , Specifica   , Tipo terapia   , Codice paziente   , Inizio ciclo   , Tipo   , Fine ciclo   , Tempo di osservazione   , Età ad inizio dialisi (anni)   , Codice centro   
+,filtra per  Specifica Like cinacalcet   ,    oppure , Specifica Like mimpara   ,    oppure , Specifica Like parareg   
+",Terapie,07/04/2009,-
+"codici centro","seleziona  Codice paziente   , Codice centro   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa cambio tecnica   , Specifica malattia di base   
+,ordina per  Codice centro   
+,filtra per  Codice paziente Like LEFR   
+","Cicli di dialisi",24/10/2007,-
+"Comorbidità tutto il registro","seleziona  Codice paziente   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Codice paziente   
+,filtra per  Data nascita < 15/05/2017   
+","Dati anagrafici paziente",08/05/2017,-
+Complicanze,"seleziona  Codice centro   , Codice paziente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Numero ciclo   , Data   , Tipo complicanza   , Complicanza correlata alla dialisi   , Giorni ricovero   , Tipo   
+,filtra per  Data < 31/12/2010   
+","Complicanze e ricoveri",04/10/2008,-
+complicanze,"seleziona  Codice centro   , Codice paziente   , Data   , Tipo complicanza   , Giorni ricovero   , Complicanza correlata alla dialisi   , Inizio ciclo   , Data   
+","Complicanze e ricoveri",04/03/2008,-
+"complicanze catetere","seleziona  Codice paziente   , Data nascita   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   , Numero ciclo   , Data complicanza   , Complicanza   , SpecificheComplicanza   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/1995   ,    e , Età ad inizio dialisi (anni) > 1   
+","Lista complicanze catetere",25/08/2008,-
+"complicanze cateteri ","seleziona  Codice centro   , Codice paziente   , Data inserzione   , Tipo catetere   , Sede inserzione   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Utilizzo dopo giorni   , Data complicanza   , Complicanza   , SpecificheComplicanza   , Sintomi complicanza   , Specifiche sintomo   , Data rimozione   , Motivo rimozione   , Inizio ciclo   , Fine ciclo   , Fine (causa)   
+,ordina per  Data inserzione   
+","Lista complicanze catetere",16/08/2006,-
+"Complicanze tutto il registro","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   , Trattamento precedente   , Tipo complicanza   , Complicanza correlata alla dialisi   , Malattia di base   , Specifica malattia di base   
+,filtra per  Inizio ciclo < 20/06/2018   ,    e , Tipo complicanza Like torace   
+","Complicanze e ricoveri",08/05/2017,-
+"Cpd 1986-2011","seleziona  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Inizio ciclo   
+,ordina per  Inizio ciclo   , Età ad inizio dialisi (anni)   
+,filtra per  Inizio ciclo >= 01/01/1999   ,    e , Inizio ciclo <= 31/12/2016   ,    e , Tipo = cpd   
+","Cicli di dialisi",19/09/2012,-
+CPD-HD>2004,"seleziona  Codice paziente   , Data nascita   , Sesso   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Fine(causa)   , Numero ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   , Clearance urea   , Diuresi residua   
+,filtra per  Inizio ciclo >= 01/01/2004   
+","Cicli di dialisi",21/05/2014,-
+"Data Dump: accessi ED","seleziona  Codice paziente   , Codice centro   , Data accesso   , Tipo accesso   , Specifica   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Tipo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Numero ciclo dello stesso tipo   , Numero ciclo precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Primo trattamento in assoluto   , Trattamento precedente   , Data accesso   , Malattia di base   , Specifica malattia di base   
+,ordina per  Codice paziente   
+","Accessi ED",30/01/2013,"Download Data: Accessi ED"
+"Data Dump: Anagrafica","seleziona  Codice paziente   , Codice centro   , Descrizione centro   , Data nascita   , Sesso   , Luogo di nascita   , Luogo di residenza   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Ultimo aggiornamento dati   
+","Dati anagrafici paziente",22/01/2013,"Download data: anagrafica"
+"Data Dump: cateteri","seleziona  Data inserzione   , Tipo catetere   , Numero manicotti   , Sede inserzione   , Omentectomia   , Orientamento tunnel   , Utilizzo dopo giorni   , Data rimozione   , Motivo rimozione   , Codice paziente   , Codice centro   
+,ordina per  Codice paziente   
+","Lista cateteri",25/01/2013,"Download Data: Lista cateteri"
+"Data Dump: Cicli","seleziona  Codice paziente   , Codice centro   , Tipo   , Fine ciclo   , Inizio ciclo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Numero ciclo dello stesso tipo   , Numero ciclo precedente   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Primo trattamento in assoluto   , Trattamento precedente   , TrattamentoPrecedente   , NuovoCentro   , Training CPD   , Preparazione accesso vascolare   , Causa cambio tecnica   , Motivo ciclo   , Giorni ricovero ad inizio dialisi   
+","Cicli di dialisi",22/01/2013,"Download data: cicli dialisi"
+"Data Dump: compl. cateteri","seleziona  Codice paziente   , Codice centro   , Data complicanza   , Complicanza   , SpecificheComplicanza   , Sintomi complicanza   , Specifiche sintomo   , Data inserzione   , Tipo catetere   
+,ordina per  Codice paziente   
+","Lista complicanze catetere",29/01/2013,"Download Data: Lista complicanze cateteri"
+"Data Dump: Conn. CPD","seleziona  Codice paziente   , Codice centro   , Data connessione   , Connessione   , Frequenza sostituzione (gg)   , Inizio ciclo   
+,ordina per  Codice paziente   
+","Connessioni CPD",30/01/2013,"Download Data: Connessioni CPD"
+"Data Dump: decesso","seleziona  Codice paziente   , Codice centro   , Data decesso   , Causa decesso   , Fattori di rischio renali   , Altri fattori di rischio   , Fattori di rischio successivi   , Riscontro autoptico   
+,ordina per  Codice paziente   
+","Schede decesso",30/01/2013,"Download DAta: Schede decesso"
+"Data Dump: medic. catetere","seleziona  Codice paziente   , Codice centro   , Data medicazione   , Tipo disinfettante   , Medicazione ogni gg   , Data inserzione   , Tipo catetere   
+,ordina per  Codice paziente   
+","Lista medicazioni catetere",29/01/2013,"Download Data: Lista medicazione catetere"
+"Data dump: osservazioni","seleziona  Codice paziente   , Codice centro   , Tempo di osservazione   , Data osservazione   , Inizio ciclo   , Clearance creatinina   , Clearance urea   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   
+","Osservazioni periodiche (dettagliate)",25/01/2013,"Download Data: Osservazioni periodiche"
+"Data Dump: peritoniti","seleziona  Codice paziente   , Codice centro   , Data peritonite   , Criteri diagnostici   , Specifica diagnosi   , Coltura tampone nasale   , Infezione emergenza cutanea   , Tampone emergenza cutanera   , Leakage   , altri fattori di rischio   , Coltura liquido peritoneale (1)   , Coltura liquido peritoneale (2)   , Coltura non eseguita per   , Modifica al protocollo dialitico   , Giorni di ricovero   
+,filtra per  Data peritonite > 31/12/2009   
+","Lista peritoniti",29/01/2013,"Download Data: Lista peritoniti"
+"Data Dump: prescr. CPD","seleziona  Codice paziente   , Codice centro   , Carico standard   , Numero scambi   , Tipo di tampone   , Concentrazione media glucosio   , Volume tidal   , Ultimo carico   , Tipo soluzione   , Durata dialisi min   , Inizio ciclo   , Data osservazione   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2000   
+","Lista prescrizioni CPD",30/01/2013,"Download Data: Lista prescrizioni CPD"
+"Data Dump: prescr. HD","seleziona  Codice paziente   , Codice centro   , Sedute settimanali   , Durata sedute   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Modalita   , Data osservazione   , Inizio ciclo   
+,ordina per  Codice paziente   
+","Lista prescrizioni ED",30/01/2013,"DOwnload Data: Lista prescrizioni ED"
+"Data Dump: Ricoveri","seleziona  Codice paziente   , Codice centro   , Data   , Tipo complicanza   , Giorni ricovero   , Complicanza correlata alla dialisi   , Codice malattia di base   , Inizio ciclo   
+","Complicanze e ricoveri",22/01/2013,"Download Data: Complicanze e Ricoveri"
+"Data Dump: Scheda clinica","seleziona  Codice paziente   , Codice centro   , Data osservazione   , Data nascita   , Età ad inizio dialisi (anni)   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Diuresi residua   , Fine(causa)   , Peso   , Statura   , PAMin   , PAMax   , Tipo   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo < 01/01/2008   ,    e , Fine ciclo >= 01/01/2007   ,    e , Data osservazione < 01/01/2008   ,    e , Data osservazione >= 01/01/2007   ,    e , Tipo = CPD   
+","Scheda clinica",30/01/2013,"Download Data: Scheda clinica"
+"Data Dump: Terapie","seleziona  Codice paziente   , Codice centro   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Data osservazione   
+,ordina per  Codice paziente   
+",Terapie,29/01/2013,"Download Data: Terapie"
+"Data Dump: terapie perit.","seleziona  Codice paziente   , Codice centro   , Dal   , Al   , Farmaco   , Dose   , Via   , Intermittenza   , SomministrazioneDoseCarico   , Data peritonite   
+,ordina per  Codice paziente   
+","Lista terapie peritoniti",29/01/2013,"Download Data: Lista terapie peritoniti"
+diuresi,"seleziona  Codice paziente   , Data osservazione   , Diuresi   , Tipo   
+,filtra per  Data osservazione >= 01/01/2004   ,    e , Tipo = CPD   
+","Dati biochimici",13/09/2006,-
+"ED < 2 anni","seleziona  Codice paziente   , Codice centro   , Data nascita   , Codice malattia di base   , Specifica malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Trattamento precedente   , Causa cambio tecnica   
+,ordina per  Età ad inizio dialisi (anni)   , Trattamento precedente   
+,filtra per  Inizio ciclo >= 01/01/2000   ,    e , Età ad inizio dialisi (anni) < 2   ,    e , Tipo = ED   
+","Cicli di dialisi",11/10/2013,-
+eritropoietina,"seleziona  Codice paziente   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Causa fine   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Data osservazione   , Tipo   
+,ordina per  Codice paziente   , Data osservazione   
+,filtra per ( Tipo terapia Like Eritropoietina   ,    oppure , Tipo terapia Like Darbepoetin )  ,    e , Data osservazione >= 1/1/2005   
+",Terapie,04/11/2008,-
+"Farmaci e lattanti","seleziona  Codice paziente   , Data nascita   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Tipo terapia   , Specifica   , Dose   , SomministrazioniOgniGg   , Tempo di osservazione   
+,ordina per  Codice paziente   
+,filtra per  Età ad inizio dialisi (anni) < 1   ,    e , Inizio ciclo >= 01/01/1995   ,    e , Fine ciclo < 31/12/2007   
+",Terapie,19/05/2010,-
+"GFR at start","seleziona  Codice paziente   , Fine(causa)   , Codice malattia di base   , Inizio ciclo   , Tipo   , Clearance creatinina   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Clearance urea   , Diuresi residua   
+,ordina per  Codice paziente   , Età ad inizio dialisi (anni)   
+,filtra per  Trattamento precedente = terapia conservativa   ,    e ,( Inizio ciclo >= 01/01/2006   ,    e , Inizio ciclo < 31/12/2008 )  
+","Cicli di dialisi",27/03/2009,-
+GH,"seleziona  Codice paziente   , Codice centro   , Tipo   , Codice malattia di base   , Altro   , Inizio ciclo   , 25OH-D3   , Data osservazione   
+,ordina per  Età ad inizio dialisi (anni)   , Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2000   ,    e , Tipo = CPD   
+","Osservazioni periodiche (dettagliate)",10/03/2014,-
+"Hd hdf","seleziona  Codice paziente   , Modalita   , Tempo di osservazione   , Codice centro   , Sesso   , Malattia di base   , Specifica malattia di base   , Data nascita   , Primo trattamento in assoluto   , Inizio ciclo   , Fine ciclo - ultimo aggiornamento   , Fine ciclo   , Tipo   , Trattamento precedente   , Data osservazione   , Fine(causa)   , Causa fine   , Causa decesso   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2004   ,    e , Tipo = ED   
+","Lista prescrizioni ED",28/12/2017,-
+HD-HDF,"seleziona  Codice paziente   , Codice malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Età ad inizio dialisi (anni)   , Superficie filtro   , Tipo membrana   , Modalita   , Sedute settimanali   , Durata sedute   
+,ordina per  Età ad inizio dialisi (anni)   , Modalita   
+","Lista prescrizioni ED",05/04/2014,-
+"HD<2 aa cicli","seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Clearance creatinina   , Diuresi residua   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , KT_V_Urea_settimanale_renale   , Clearance_creatinina_dialitico   , KT_V_Urea_settimanale_dialitico   , Clearance_creatinina_renale   , Ultrafiltrazione   , Peso   , Statura   , PAMin   , PAMax   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Al(OH)3   , Alfa-beta-bloccanti   , Alfa-bloccanti   , Altro antiipertensivo   , Beta-bloccanti   , Ca antagonisti   , CaCO3   , Calcio Acetato   , Darbepoetin   , Diuretici   , Eritropoietina   , hGH   , Renagel   , Terapia marziale   , Tipo   , Età ad inizio dialisi (anni)   
+,ordina per  Età ad inizio dialisi (anni)   , Tempo di osservazione   
+,filtra per  Tipo = ED   
+","Osservazioni periodiche (dettagliate)",24/02/2014,-
+"Incedenti dal 2010 con ciclo concluso Genova","seleziona  Codice paziente   , Codice centro   , Malattia di base   , Specifica malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   
+,ordina per  Malattia di base   
+,filtra per  Inizio ciclo >= 01/01/2010   ,    e , Fine ciclo <= 31/01/2017   
+","Cicli di dialisi",01/02/2017,"Ordinati per malattia di Base"
+"Incidenti 2009","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Trattamento precedente   , Fine ciclo   , Codice paziente   
+,ordina per  Tipo   , Inizio ciclo   
+,filtra per  Inizio ciclo >= 01/01/2008   ,    e , Inizio ciclo < 01/01/2009   ,    e , Trattamento precedente = terapia conservativa   
+","Cicli di dialisi",20/11/2012,-
+"Incidenti 2014","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Causa fine   , Codice centro   , Ultimo aggiornamento dati   , Causa cambio tecnica   , Giorni ricovero ad inizio dialisi   
+,ordina per  Codice paziente   , Codice centro   , Codice paziente   
+","Cicli di dialisi",17/11/2014,-
+"Incidenti 2016","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Causa cambio tecnica   , Età ad inizio dialisi (anni)   , Codice centro   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2016   ,    e , Inizio ciclo < 01/01/2017   ,    e , Trattamento precedente = terapia conservativa   
+","Cicli di dialisi",12/07/2016,-
+"Incidenti anni 2006-2014","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Malattia di base   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Codice malattia di base   
+,ordina per  Tipo   , Inizio ciclo   
+,filtra per  Inizio ciclo >= 01/01/2006   ,    e , Inizio ciclo < 01/01/2015   ,    e , Trattamento precedente = Terapia conservativa   ,    e , Tipo = ed   
+","Cicli di dialisi",15/03/2013,-
+"Incidenti prima del 1999 meno di 16 anni","seleziona  Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Codice paziente   , Codice centro   , Tipo   
+,ordina per  Tipo   , Età ad inizio dialisi (anni)   
+,filtra per  Inizio ciclo <= 31/12/1998   ,    e , Inizio ciclo >= 01/01/1986   
+","Osservazioni periodiche (dettagliate)",19/09/2012,-
+"Inserimenti 2010-2011-2012","seleziona  Codice centro   , Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   
+,ordina per  Codice centro   , Codice paziente   
+,filtra per ( Inizio ciclo <= 31/12/2012   ,    e , Fine ciclo >= 01/01/2010 )  ,    oppure ,( Inizio ciclo <= 31/12/2012   ,    e , Causa fine = continua )  
+","Cicli di dialisi",27/11/2014,"Per correzione citazioni e acknowledgments "
+"Inserimento pz diviso per centro","seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Causa fine   
+,filtra per  Fine ciclo >= 01/01/2013   ,    oppure , Causa fine = continua   ,    e , Inizio ciclo <= 31/12/2016   
+","Cicli di dialisi",12/10/2017,-
+Lattanti,"seleziona  Codice paziente   , Numero ciclo   , Durata ciclo (mesi)   , Inizio ciclo   , Fine ciclo   , Tipo   
+,ordina per  Durata ciclo (mesi)   
+","Cicli di dialisi",23/08/2008,-
+"lista trapianto","seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Inizio ciclo   , Fine ciclo   , Tipo   , Situazione lista trapianti   
+,ordina per  Codice paziente   , Tempo di osservazione   
+,filtra per  Inizio ciclo >= 01/01/1996   
+","Osservazioni periodiche",26/05/2008,-
+"metab Ca/P","seleziona  Data osservazione   , Codice malattia di base   , Tipo   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Codice paziente   , Età alla osservazione (anni)   , PTH   , Ca   , P   , Diuresi   
+,ordina per  Data osservazione   , Codice paziente   , Tipo   
+,filtra per  Data osservazione >= 01/01/1999   ,    e , Data osservazione <= 31/12/2011   
+","Dati biochimici",02/09/2006,-
+"Nuova interrogazione","seleziona  Codice paziente   , Data nascita   , Sesso   , Codice malattia di base   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Numero ciclo   , Fine(causa)   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Fine ciclo - ultimo aggiornamento   
+","Cicli di dialisi",07/02/2013,-
+"Nuova interrogazione","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Data nascita   
+,ordina per  Codice paziente   , Inizio ciclo   
+","Cicli di dialisi",04/12/2012,-
+"Nuova interrogazione","seleziona  Inizio ciclo   , Tipo   , Età ad inizio dialisi (anni)   , Numero ciclo   , Causa fine   , Durata ciclo (mesi)   , Malattia di base   , Specifica malattia di base   , Codice paziente   
+,ordina per  Inizio ciclo   
+","Cicli di dialisi",08/05/2011,-
+"Nuova interrogazione","seleziona  Codice paziente   , Inizio ciclo   , Causa decesso   , Codice paziente   
+","Cicli di dialisi",27/01/2016,-
+"Nuova interrogazione","seleziona  Codice paziente   , Codice paziente   
+,ordina per  Codice paziente   
+,filtra per  Codice paziente <   ,    e , Codice paziente <   
+","Cicli di dialisi",11/04/2016,-
+"Nuova interrogazione","seleziona  Codice paziente   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Codice paziente   
+","Cicli di dialisi",14/04/2016,-
+"Nuova interrogazione","seleziona  Tipo   , Fine ciclo   , Numero ciclo   , Primo trattamento in assoluto   , Trattamento precedente   , Codice paziente   
+,ordina per  Codice paziente   
+,filtra per  Codice paziente   
+","Cicli di dialisi",18/04/2013,-
+"Nuova interrogazione","seleziona  Codice centro   , Codice paziente   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Data nascita   
+,filtra per ( Codice centro = 13BKA )  ,    e ,( Codice malattia di base = 112 )  
+","Cicli di dialisi",15/06/2015,-
+"Nuova interrogazione","seleziona  Codice paziente   , Codice centro   , Data nascita   , Sesso   , Malattia di base   , Specifica malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Diuresi residua   , Fine(causa)   , Numero ciclo   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   , Trattamento precedente   , Causa cambio tecnica   , Motivo ciclo   
+,ordina per  Codice centro   , Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2007   ,    e , Età ad inizio dialisi (anni) < 18   
+","Cicli di dialisi",22/02/2018,-
+"Nuova interrogazione","seleziona  Codice paziente   , Patologie associate non renali   
+,filtra per  Ultimo aggiornamento dati >= 01/01/2004   
+","Dati anagrafici paziente",28/12/2017,-
+"Nuova interrogazione","seleziona  Codice paziente   , Codice centro   , Data nascita   , Patologie associate non renali   
+,filtra per  Ultimo aggiornamento dati > 01/01/2007   
+","Dati anagrafici paziente",24/04/2018,-
+"Nuova interrogazione","seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Data osservazione   , Tempo di osservazione   , Tipo   , Modalita   , Durata sedute   , Sedute settimanali   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Sedute settimanali   
+,ordina per  Codice paziente   , Data osservazione   , Sedute settimanali   
+,filtra per  Data osservazione >= 01/01/2004   
+","Lista prescrizioni ED",23/01/2016,-
+"Nuova interrogazione","seleziona  Codice paziente   , Tipo terapia   , Specifica   , Tempo di osservazione   
+",Terapie,13/03/2012,-
+"Nuova interrogazione","seleziona  Tipo terapia   , Specifica   , Codice paziente   , Tipo   
+,ordina per  Inizio ciclo   
+,filtra per  Inizio ciclo < 01/01/1999   
+",Terapie,19/03/2012,-
+"Nuova interrogazione","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Data nascita   , Tipo   , Sesso   , Tempo di osservazione   
+,ordina per  Codice paziente   
+,filtra per ( Inizio ciclo > 01/01/2006   ,    e , Fine ciclo > 01/01/2011 )  ,    e , Tempo di osservazione < 3   
+","Osservazioni periodiche (dettagliate)",15/11/2012,-
+"Nuova interrogazione","seleziona  Codice paziente   , Codice centro   , Data nascita   , Sesso   , Malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Tempo di osservazione   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , Peso   , Statura   , PAMax   , PAMin   , Eritropoietina   , hGH   
+,ordina per  Codice paziente   , Tempo di osservazione   
+,filtra per  Tipo = ED   ,    e , Inizio ciclo > 01/01/2004   
+","Osservazioni periodiche (dettagliate)",04/12/2017,-
+"Nuova interrogazione","seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Data osservazione   , Tempo di osservazione   , Tipo   , PTH   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , Diuresi   , Peso   , Statura   , PAMax   , PAMin   , Eritropoietina   , Tempo di osservazione   , 1_25-OH2   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Alfa-beta-bloccanti   , Beta-bloccanti   , Ca antagonisti   , Altro antiipertensivo   , hGH   
+,ordina per  Codice paziente   , Data osservazione   
+,filtra per ( Tipo = ED )  ,    e , Data osservazione >= 01/01/2004   
+","Osservazioni periodiche (dettagliate)",23/01/2016,-
+"Nuova interrogazione","seleziona  Peso   , 1_25-OH2   , Eritropoietina   , Tempo di osservazione   , Tipo   , Inizio ciclo   , Emoglobina   , Statura   , 1-ALFA-OH   , 25OH-D3   , ACE inibitori   , Al(OH)3   , Alfa-beta-bloccanti   , Alfa-bloccanti   , Altro antiipertensivo   , Beta-bloccanti   , Ca antagonisti   , CaCO3   , Calcio Acetato   , Diuretici   , hGH   , Renagel   , Terapia marziale   , Codice paziente   , Data nascita   , Data osservazione   , Tempo di osservazione   
+,filtra per  Tipo = ED   ,    e , Inizio ciclo >= 01/01/2000   
+","Osservazioni periodiche (dettagliate)",26/02/2014,-
+"Nuova interrogazione","seleziona  Codice paziente   , Data osservazione   , Inizio ciclo   , Fine ciclo   , Tipo   , Peso   , Clearance creatinina   
+,filtra per  Inizio ciclo >= 01/01/2004   
+","Scheda clinica",02/10/2014,-
+"Nuova interrogazione biochimica ED 2aa","seleziona  Età ad inizio dialisi (anni)   , Data osservazione   , Data nascita   , Codice centro   , Tipo   , FA   , PTH   , Proteinemia_totale   , Albuminemia   , Emoglobina   , Urea   , Creatinemia   , Ca   , P   , HCO3   , KT_V_Urea_settimanale_dialitico   , Clearance_creatinina_renale   , Codice paziente   
+,ordina per  Età ad inizio dialisi (anni)   
+,filtra per  Tipo = ED   
+","Dati biochimici",24/02/2014,-
+"Nuova interrogazione cicli","seleziona  Codice paziente   , Tempo di osservazione   , Data osservazione   , Peso   , Statura   , PAMax   , PAMin   , Tipo   
+,filtra per  Tipo = ED   ,    e , Data osservazione >= 01/01/2000   
+","Osservazioni periodiche (dettagliate)",26/02/2014,-
+"Nuova interrogazione ED 2 aa","seleziona  Codice paziente   , Data osservazione   , Codice centro   , Tipo   , Data nascita   , Inizio ciclo   , Peso   , Statura   , PAMin   , PAMax   , Età ad inizio dialisi (anni)   
+,ordina per  Età ad inizio dialisi (anni)   , Inizio ciclo   , Codice paziente   
+,filtra per  Tipo = ED   ,    e , Inizio ciclo >= 01/01/2000   
+","Scheda clinica",24/02/2014,-
+"nuovi pz 2008","seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Tipo   , Numero ciclo   , TrattamentoPrecedente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Clearance creatinina   , Clearance urea   , Diuresi residua   , Causa fine   
+,filtra per ( Inizio ciclo >= 1/1/2011   ,    e , Inizio ciclo < 01/01/2012 )  ,    e , TrattamentoPrecedente = trapianto   ,    e , Età ad inizio dialisi (anni) < 18   
+","Cicli di dialisi",16/02/2006,-
+Ossalosi,"seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Patologie associate non renali   , Luogo di residenza   , Ultimo aggiornamento dati   , Descrizione centro   
+,filtra per  Codice malattia di base = 53   ,    oppure , Codice malattia di base = 530   
+","Dati anagrafici paziente",22/02/2013,-
+"patologie associate ","seleziona  Codice centro   , Codice paziente   , Patologie associate non renali   , Ultimo aggiornamento dati   , Specifica malattia di base   
+","Dati anagrafici paziente",04/01/2007,-
+"pazienti 2004","seleziona  Codice paziente   , Codice centro   , Data nascita   , Inizio ciclo   , Fine ciclo   , Tipo   , Malattia di base   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   
+,ordina per  Codice centro   
+,filtra per  Inizio ciclo >= 01/01/2012   
+","Cicli di dialisi",20/11/2007,-
+"pazienti 2004 residenza","seleziona  Codice paziente   , Codice centro   , Luogo di nascita   , Luogo di residenza   , Ultimo aggiornamento dati   
+,ordina per  Codice paziente   
+,filtra per  Ultimo aggiornamento dati >= 31/12/2004   
+","Dati anagrafici paziente",16/09/2006,-
+"Pazienti centro 13TFA","seleziona  Codice paziente   , Codice centro   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Malattia di base   , Età ad inizio dialisi (anni)   
+,ordina per  Codice paziente   , Età ad inizio dialisi (anni)   
+,filtra per  Codice centro = 13TFA   
+","Cicli di dialisi",29/04/2016,-
+"pazienti genova","seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Tipo   
+,ordina per  Inizio ciclo   
+,filtra per  Codice centro Like gaa   ,    e , Fine ciclo - ultimo aggiornamento >= 31/12/1980   
+","Cicli di dialisi",30/06/2006,-
+"Pazienti nati in Sicilia","seleziona  Codice paziente   , Data nascita   , Provincia   , Codice malattia di base   , Inizio ciclo   , Età ad inizio dialisi (anni)   , Tipo   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Causa cambio tecnica   , Trattamento precedente   , Specifica malattia di base   , Numero ciclo   , Codice centro   , Malattia di base   , Diuresi residua   , Clearance creatinina   , Clearance urea   
+,ordina per  Inizio ciclo   , Codice centro   
+,filtra per  Provincia = AG   ,    oppure , Provincia = CL   ,    oppure , Provincia = CT   ,    oppure , Provincia = EN   ,    oppure , Provincia = ME   ,    oppure , Provincia = PA   ,    oppure , Provincia = RG   ,    oppure , Provincia = SR   ,    oppure , Provincia = CT   
+","Cicli di dialisi",28/11/2010,-
+"pazienti totali","seleziona  Codice centro   , Codice paziente   , Numero ciclo   , Numero ciclo dello stesso tipo   , Inizio ciclo   , Fine ciclo   , Tipo   
+","Cicli di dialisi",16/10/2008,-
+"peritonite 1986-2008","seleziona  Codice centro   , Codice paziente   , Data peritonite   , Inizio ciclo   , Fine ciclo   , Numero ciclo   , Criteri diagnostici   , Coltura liquido peritoneale (1)   , Coltura liquido peritoneale (2)   , Giorni di ricovero   , Coltura tampone nasale   , Infezione emergenza cutanea   , Tampone emergenza cutanera   , Leakage   , Durata ciclo (mesi)   , Causa fine   
+,filtra per  Codice paziente <= M   
+","Lista peritoniti",05/02/2010,-
+"Peritoniti 2016","seleziona  Codice centro   , Codice paziente   , Tipo   , Data peritonite   , Inizio ciclo   , Fine ciclo   , Causa fine   
+,filtra per ( Fine ciclo <= 31/12/2016   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2017   ,    e , Codice centro Like 13BKA   ,    e , Data peritonite >= 01/01/2016   ,    e , Data peritonite <= 31/12/2016   
+","Lista peritoniti",07/01/2014,-
+PET,"seleziona  D P creatinina (4h)   , Data test   , Codice paziente   , Codice centro   
+","Test equilibrazione peritoneale",10/05/2007,-
+"Prescrizione ED","seleziona  Codice paziente   , Codice centro   , Data osservazione   , Tempo di osservazione   , Sedute settimanali   , Durata sedute   , Tipo membrana   , Superficie filtro   , Flusso ematico   , Modalita   
+,filtra per  Data osservazione >= 01/01/2005   
+","Lista prescrizioni ED",12/09/2006,-
+"prescrizione PD 2005","seleziona  Codice paziente   , Codice centro   , Data osservazione   , Tempo di osservazione   , Numero scambi   , Carico standard   , Ultimo carico   , Tipo soluzione   , Scarico liquido attacco APD   , Tipo di tampone   , Concentrazione media glucosio   , Volume tidal   , Durata dialisi min   , Tipo   
+,ordina per  Codice paziente   , Codice centro   , Data osservazione   
+,filtra per  Data osservazione <= 01/01/2005   ,    e 
+","Lista prescrizioni CPD",09/09/2006,-
+"Prevalent pts 31/12/2011","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   
+,ordina per  Codice paziente   , Inizio ciclo   
+,filtra per ( Fine ciclo > 31/12/2003   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2005 )  
+","Cicli di dialisi",25/07/2012,-
+"Prevalenti 2004","seleziona  Codice paziente   , Sesso   , Codice paziente   , Codice centro   
+","Lista peritoniti",09/11/2012,-
+"Prevalenti 2004b","seleziona  Codice paziente   
+","Dati biochimici",19/09/2012,-
+"Prevalenti 2009","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   , Malattia di base   , Codice malattia di base   , Numero ciclo   , Causa decesso   
+,ordina per  Codice paziente   
+,filtra per ( Fine ciclo > 31/12/2001   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2003 )  ,    e , Tipo = ed   
+","Cicli di dialisi",18/04/2013,-
+"Prevalenti 2010","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   
+,filtra per ( Fine ciclo > 31/12/2009   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2011   
+","Cicli di dialisi",18/04/2013,-
+"Prevalenti 2011","seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Inizio ciclo   , Fine ciclo   , Tipo   , Età ad inizio dialisi (anni)   , TrattamentoPrecedente   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   , Clearance urea   , Diuresi residua   
+,ordina per  Età ad inizio dialisi (anni)   , Inizio ciclo   
+,filtra per ( Fine ciclo >= 01/01/2011   ,    oppure , Inizio ciclo = continua )  ,    e 
+","Cicli di dialisi",21/08/2010,-
+"Prevalenti 2012-2016 con PTH CA P e FA","seleziona  Codice paziente   , Età alla osservazione (anni)   , Inizio ciclo   , Fine ciclo   , Tipo   , Fine(causa)   , Sesso   , PTH   , P   , Ca   , FA   
+,filtra per  Inizio ciclo < 01/01/2017   ,    e , Fine ciclo >= 01/01/2012   ,    e , Data osservazione < 01/01/2017   ,    e , Data osservazione >= 01/01/2007   
+","Dati biochimici",15/11/2012,-
+"Prevalenti 2013-2016","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Malattia di base   , Codice malattia di base   , Causa cambio tecnica   , Causa decesso   , Numero ciclo   , Codice centro   
+,ordina per  Codice paziente   , Tipo   
+,filtra per  Fine ciclo > 31/12/2012   ,    oppure , Causa fine = continua   ,    e , Inizio ciclo < 01/01/2017   
+","Cicli di dialisi",07/09/2016,-
+"Prevalenti 2014 Luzio","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa cambio tecnica   , Codice centro   , Codice malattia di base   , Malattia di base   , Ultimo aggiornamento dati   
+,ordina per  Codice paziente   , Codice centro   , Inizio ciclo   
+,filtra per ( Fine ciclo > 31/12/2013   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2015 )  
+","Cicli di dialisi",09/03/2016,-
+"Prevalenti anno 2011 d.c.","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Età ad inizio dialisi (anni)   , Causa fine   , Causa cambio tecnica   , Durata ciclo (mesi)   
+,ordina per  Tipo   , Inizio ciclo   
+,filtra per ( Fine ciclo > 31/12/2012   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2013 )  
+","Cicli di dialisi",15/03/2013,-
+"Prevalenti anno 2012","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Durata ciclo (mesi)   , Codice paziente   , Malattia di base   , Codice malattia di base   , Numero ciclo   , Codice centro   
+,ordina per  Codice paziente   , Codice paziente   
+,filtra per ( Fine ciclo >= 01/01/2013   ,    oppure , Causa fine = continua )  ,    e , Inizio ciclo < 01/01/2014   
+","Cicli di dialisi",09/10/2013,-
+"Prevalenti luzio 2012","seleziona  Codice paziente   , Codice centro   , Inizio ciclo   , Fine ciclo   , Tipo   , Causa fine   , Trattamento precedente   
+,ordina per  Codice paziente   
+,filtra per ( Fine ciclo > 31/12/2011   ,    oppure , Causa fine = continua )  ,    e ,( Inizio ciclo < 01/01/2013 )  
+","Cicli di dialisi",15/10/2013,"Da confrontare con interrogazione "Prevalenti 2013""
+"Primary hyperoxaluria","seleziona  Codice paziente   , Data nascita   , Codice malattia di base   , Tipo   , Inizio ciclo   , Clearance creatinina   , Fine ciclo   , Causa fine   , Causa decesso   , Trattamento precedente   , Diuresi residua   , Codice centro   , Causa cambio tecnica   
+,ordina per  Inizio ciclo   
+,filtra per  Codice malattia di base = 53   ,    oppure , Codice malattia di base = 530   
+","Cicli di dialisi",06/03/2011,-
+"Protocollo HD lattanti","seleziona  Codice paziente   , Data nascita   , Malattia di base   , Età ad inizio dialisi (anni)   , Trattamento precedente   , Diuresi residua   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Tipo   
+,ordina per  Inizio ciclo   
+,filtra per  Età ad inizio dialisi (anni) < 2   ,    e , Durata ciclo (mesi) > 3    ,    e , Inizio ciclo >= 01/01/2000   ,    e , Tipo = ED   
+","Cicli di dialisi",20/11/2013,-
+"Prova aggiungi visualizzazione campi","seleziona  Codice paziente   
+,ordina per  Codice paziente   
+,filtra per  Codice paziente <   ,    e , Codice paziente <   ,    e , Codice paziente <   ,    e , Codice paziente <   
+","Cicli di dialisi",15/04/2016,-
+"Prova elena","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Data nascita   , Età ad inizio dialisi (anni)   
+,ordina per  Codice paziente   
+,filtra per ( Fine ciclo > 31/12/2008   ,    oppure , Causa fine = continua )  , Codice paziente   ,    e 
+","Cicli di dialisi",30/11/2012,-
+"pz 2012 - UNICA INCIDENTI","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Causa fine   , Codice centro   , Malattia di base   , Primo trattamento in assoluto   , Durata ciclo (mesi)   , Età ad inizio dialisi (anni)   
+,ordina per  Trattamento precedente   , Codice paziente   
+,filtra per  Inizio ciclo >= 01/01/2012   ,    e , Inizio ciclo < 01/01/2013   
+","Cicli di dialisi",09/10/2013,-
+"pz 2012 - UNICA PREVALENTI","seleziona  Codice paziente   , Codice centro   , Codice malattia di base   , Tipo   , Numero ciclo   , TrattamentoPrecedente   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   
+,ordina per  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Codice centro   
+,filtra per  Inizio ciclo <= 31/12/2012   ,    e ,( Fine ciclo > 31/12/2011   ,    oppure , Causa fine = continua )  
+","Cicli di dialisi",16/02/2006,-
+"PZ con 1 ciclo DP al 2005","seleziona  Codice paziente   , Codice centro   , Fine ciclo   , Durata ciclo (mesi)   , Causa fine   , Clearance creatinina   
+,ordina per  Codice centro   
+","Cicli di dialisi",28/01/2010,-
+"Sindrome nefrosica congenita","seleziona  Codice paziente   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Causa fine   , Causa decesso   
+,ordina per  Codice paziente   
+,filtra per  Codice malattia di base = 112   ,    oppure , Codice malattia di base = 111   
+","Cicli di dialisi",22/11/2013,-
+"terapia < 1 anno","seleziona  Codice paziente   , Età ad inizio dialisi (anni)   , Numero ciclo   , Tipo terapia   , Inizio ciclo   , Specifica   , Dose   , SomministrazioniOgniGg   , Tempo di osservazione   
+,ordina per  Codice paziente   
+,filtra per  Età ad inizio dialisi (anni) <= 1   
+",Terapie,27/02/2008,-
+"Terapia Altro","seleziona  Codice paziente   , Data osservazione   , Tipo terapia   , Specifica   
+,filtra per  Data osservazione < 15/11/2016   ,    e , Data osservazione > 01/01/2015   
+",Terapie,01/11/2016,-
+"terapia con GH","seleziona  Tipo terapia   , Codice centro   , Data osservazione   , Dose   , Età ad inizio dialisi (anni)   
+,ordina per  Codice paziente   
+,filtra per  Tipo terapia = hGh   ,    e , Data osservazione > 01/01/2005   
+",Terapie,07/06/2007,-
+"Terapie nei tx falliti","seleziona  Codice paziente   , Tipo   , Inizio ciclo   , Fine ciclo   , Causa fine   , Malattia di base   , Età ad inizio dialisi (anni)   , Tipo terapia   , Specifica   , Trattamento precedente   
+,ordina per  Codice paziente   
+,filtra per  Inizio ciclo > 01/01/1990   ,    e , Trattamento precedente Like trapianto   ,    e , Tipo terapia Like altro   
+",Terapie,30/05/2017,-
+Test,"seleziona  Codice paziente   , Data nascita   , Sesso   , Codice centro   , Malattia di base   , Tipo   , Inizio ciclo   , Fine ciclo   , Fine(causa)   , Numero ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Causa decesso   , Fine ciclo - ultimo aggiornamento   , Ultimo aggiornamento dati   
+,ordina per  Tipo   , Codice paziente   
+,filtra per ( Tipo = ED   ,    e , Inizio ciclo >= 01/01/2004 )  ,    oppure ,( Tipo = CPD   ,    e , Inizio ciclo >= 01/01/2005 )  
+","Cicli di dialisi",04/02/2016,-
+"trapianti 2001-2007","seleziona  Codice paziente   , Codice malattia di base   , Codice centro   , Tipo   , Fine ciclo   , Codice paziente   , Durata ciclo (mesi)   , Malattia di base   
+,ordina per  Fine ciclo   
+,filtra per ( Causa fine = trapianto da cadavere   ,    oppure , Causa fine = trapianto da vivente )  ,    e , Fine ciclo >= 01/01/2001   
+","Cicli di dialisi",12/03/2008,-
+"Trapianti da vivente a genova dal 2007 a l 2017","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Causa fine   , Codice centro   
+,filtra per  Fine ciclo >= 01/01/2007   ,    e , Codice centro Like bka   ,    e , Causa fine Like vivente   
+","Cicli di dialisi",06/03/2018,-
+"Trapianti da vivente ordinato per anno","seleziona  Codice paziente   , Tipo   , Età ad inizio dialisi (anni)   , Inizio ciclo   , Fine ciclo   , Trattamento precedente   , Codice malattia di base   , Malattia di base   , Durata ciclo (mesi)   , Causa fine   
+,ordina per  Fine ciclo   
+,filtra per  Causa fine Like vivente   
+","Cicli di dialisi",24/11/2016,"Query che si aggiorna in automatico senza cambiare criteri"
+"Trapianti falliti","seleziona  Codice paziente   , Tipo   , Trattamento precedente   , Inizio ciclo   , Clearance creatinina   , Malattia di base   , Sesso   , Fine(causa)   , Fine ciclo   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa fine   , Codice centro   , Età ad inizio dialisi (anni)   , Sesso   , Numero ciclo   , Primo trattamento in assoluto   , Causa cambio tecnica   , Data nascita   , Codice paziente   
+,ordina per  Codice paziente   , Inizio ciclo   
+,filtra per  Inizio ciclo < 01/01/2017   ,    e , Trattamento precedente Like trapianto   ,    e , Codice centro = 13tea   
+","Cicli di dialisi",18/04/2017,-
+"Tutto il registro per Stefano","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   , Data nascita   , Età ad inizio dialisi (anni)   , Durata ciclo (mesi)   , Causa cambio tecnica   , Causa decesso   , Malattia di base   , Codice malattia di base   , Codice centro   
+,ordina per  Inizio ciclo   
+,filtra per  Inizio ciclo <= 31/12/2018   ,    e , Età ad inizio dialisi (anni) < 18   
+","Cicli di dialisi",30/05/2017,-
+"Tx da incidenti PD 2008-2015","seleziona  Codice paziente   , Inizio ciclo   , Fine ciclo   , Tipo   , Trattamento precedente   , Causa fine   , Codice malattia di base   , Malattia di base   
+,ordina per  Fine ciclo   
+,filtra per  Fine ciclo >= 01/01/2008   ,    e , Fine ciclo <= 31/12/2014   ,    e , Causa fine Like trapianto   ,    e , Tipo = CPD   ,    e , Inizio ciclo > 31/12/2007   ,    e , Trattamento precedente = Terapia conservativa   
+","Cicli di dialisi",18/11/2016,-
+"Tx Genova dal '96 ad oggi","seleziona  Codice paziente   , Data nascita   , Fine ciclo   , Codice malattia di base   , Malattia di base   , Specifica malattia di base   , Causa fine   , Codice centro   , Trattamento precedente   
+,filtra per  Fine ciclo > 31/12/1995   ,    e , Causa fine Like trapianto   ,    e , Codice centro Like bka   
+","Cicli di dialisi",20/02/2017,-
